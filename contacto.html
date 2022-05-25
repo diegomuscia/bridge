@@ -1,0 +1,208 @@
+<!--https://dinopedia.vercel.app/-->
+<!DOCTYPE html>
+
+<!--Establece el idioma en Español-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Bridgewater</title>
+    
+    <!-- ICONOS FONT AWESOM-->
+    <script src="https://kit.fontawesome.com/acae6684b2.js" crossorigin="anonymous"></script>
+    
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script>
+        function validarNumero(num){
+            edad = parseInt(num)
+
+
+            if(isNaN(edad)){
+                return "noEntero"
+            }else{
+                return edad
+            }
+        }
+
+
+        function valida_enviar(){
+            //Valida el nombre
+            if(document.formContacto.nombre.value.length==0){
+                alert("Tiene que escribir su nombre.")
+                document.formContacto.nombre.focus()
+                return 0;
+            }
+            //Valida el apellido
+            if(document.formContacto.apellido.value.length==0){
+                alert("Tiene que escribir su apellido.")
+                document.formContacto.apellido.focus()
+                return 0;
+            }
+            //Valida la edad. Controla si el valor ingresado es un numero y no una letra
+            edad = document.formContacto.edad.value
+            edad = validarNumero(edad)
+
+            if(edad == "noEntero"){
+                alert("Tiene que ingresar un numero en su edad.")
+                document.formContacto.edad.focus()
+                return 0;
+            }else{
+                if(edad<18){
+                    alert("Debe ser mayor de 18 años.")
+                    document.formContacto.edad.focus()
+                    return 0;
+                }
+            }
+        }
+
+        //Borra el formulario y se selecciona el campo nombre
+        function borraFormulario(){
+            document.getElementById("formContacto").reset();
+            document.formContacto.nombre.focus()
+        }
+
+    </script>
+</head>
+<body>
+    <!--div del contenedor principal-->
+    <div class="contenedor-pagina">
+        
+
+        <!--div cabecera de pagina ******************************************************************* -->
+        
+        <!--CABECERA PARA MAS DE 768px-->
+        <div class="cabecera-pagina">
+            <!--div imagen cabecera ****************************************************************** -->
+            <div class="imagen-cabecera"><a href="index.html"><img src="img/bridgewater-logo.svg" alt=""></a></div>
+
+            <!--div menu cabecera ******************************************************************** -->
+            <div class="menu-cabecera">
+                <ul>
+                    <li class=""><a href="noticia1.html"> Investigacion y conocimientos</a></li>
+                    <li class=""><a href="noticia1.html">Principios y cultura</a></li>
+                    <li class=""><a href="noticia1.html">Gente</a></li>
+                    <li class=""><a href="noticia1.html">Trabajar en Bridgewater</a></li>
+                    <li class=""><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>            
+        </div>
+
+        <!--CABECERA PARA MENOS DE 768px-->
+        <div class="cabecera-mobil">
+            <div class="burger">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="menu-mobil">
+                    <ul>
+                        <li class=""><a href="noticia1.html"> Investigacion y conocimientos</a></li>
+                        <li class=""><a href="noticia1.html">Principios y cultura</a></li>
+                        <li class=""><a href="noticia1.html">Gente</a></li>
+                        <li class=""><a href="noticia1.html">Trabajar en Bridgewater</a></li>
+                        <li class=""><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="imagen-cabecera"><a href="index.html"><img src="img/bridgewater-logo.svg" alt=""></a></div>
+        </div>
+
+        
+        <!--div imagen y texto de pagina principal-->
+        <aside>
+            <div class="contenedor-c-cont">
+                <div class="contenedor-cont">
+                    <p><h2>Formulario de contacto</h2></p>
+                    <p><h4>Escribenos y en breve nos pondrmos en contacto</h4></p>
+                    <form name="formContacto" id="formContacto">
+                        <table>
+                            <tr>
+                                <td>Nombre: </td>
+                                <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Apellido: </td>
+                                <td><input type="text" name="apellido" size="30" maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Edad: </td>
+                                <td><input type="edad" name="edad" size="15" maxlength="50"></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail: </td>
+                                <td><input type="email" name="email" size="30" max="100"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="button" value="Enviar" onclick="valida_enviar()"><input type="button" value="Borrar" onclick="borraFormulario()"></td>
+                            </tr>
+
+                        </table>
+                    </form>
+                    <p><h2>Donde nos encontramos</h2></p>
+                    <div class="mapa">
+                        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.54456346114!2d-61.90123768473454!3d-35.811112629883205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x551b88f3ef92aa3e!2zMzXCsDQ4JzQwLjAiUyA2McKwNTMnNTYuNiJX!5e0!3m2!1ses-419!2sar!4v1653499423474!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>-->
+
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3235.54456346114!2d-61.90123768473454!3d-35.811112629883205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x551b88f3ef92aa3e!2zMzXCsDQ4JzQwLjAiUyA2McKwNTMnNTYuNiJX!5e0!3m2!1ses-419!2sar!4v1653499423474!5m2!1ses-419!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+
+
+                    
+
+                </div>
+
+            
+            
+            
+            </div>
+        </aside>
+
+        
+
+        <!--div footer-->
+        <div class="footer">
+            <div class="footer-contenedor">
+                <div class="footer-imagen">
+                    <a href="index.html"><img class="imgFooter1" src="img/logo_footer.png" alt=""></a>
+                </div>
+                <!--<div class=""><img class="imgFooter1" src="img/img_office.jpeg" alt=""></div>-->
+                <div class="footer-columnas">
+                    <div class="footer-columna">
+                        <img src="img/img_office.jpeg" alt="">
+                        <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+ 
+
+
+                    </div>
+                    
+                    <div class="footer-columna">
+                        <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+                        <ul>
+                            <li class=""><a href=""> Investigacion y conocimientos</a></li>
+                            <li class=""><a href="">Principios y cultura</a></li>
+                            <li class=""><a href="">Gente</a></li>
+                            <li class=""><a href="">Trabajar en Bridgewater</a></li>
+                            <li class=""><a href="">Contacto</a></li>
+                        </ul>
+
+
+                    </div>
+                    <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+                    <i class="fa-brands fa-whatsapp" style="font-size: 20px;"> +1 (203) 226 3030</i>
+                    <a href="https://twitter.com/Bridgewater"><i class="fa-brands fa-twitter" style="font-size: 20px;"> @bridgewater</i></a>
+                    <a href="https://www.instagram.com/bridgewaterassociates/?hl=es"><i class="fa-brands fa-instagram" style="font-size: 20px;"> @bridgewaterassociates</i></a>
+                    <a href="https://www.linkedin.com/company/bridgewater-associates/"><i class="fa-brands fa-linkedin" style="font-size: 20px;"> bridgewater-associates</i></a>
+                    <a href="https://www.youtube.com/channel/UC-hKNOj4P-Y8hR9QEHpZPig"></a>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

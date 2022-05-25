@@ -1,0 +1,374 @@
+<!--https://dinopedia.vercel.app/-->
+<!DOCTYPE html>
+
+<!--Establece el idioma en Español-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home - Bridgewater</title>
+    
+    <!-- ICONOS FONT AWESOM-->
+    <script src="https://kit.fontawesome.com/acae6684b2.js" crossorigin="anonymous"></script>
+    
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- <style>
+        .contenedor-pagina{
+            border: 0 black;
+            background-color: rgb(219, 219, 219);
+            width: 85%;
+            align: center;
+            margin-left: 8%;
+        }
+
+        /* CABECERA ESTILO PARA MAS DE 768PX ############################################## */
+        .imagen-cabecera{
+            border: solid blue;            
+        }
+        
+        .cabecera-pagina{
+            border: solid gold;
+             padding: 15px;
+        }
+
+        .menu-cabecera ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            border:solid red;
+            justify-content:left;
+            padding: 10px;
+        }
+
+        .menu-cabecera ul li{
+            margin: 10px;
+        }
+
+        .menu-cabecera a{
+            text-decoration: none;
+        }
+
+        /* CABECERA ESTILO PARA MENOS DE 768PX ############################################## */
+        .cabecera-mobil{
+            display: none;
+            border:0 green;
+
+        }
+
+        .d1, .d2, .d3{
+            width: 20px;
+            height: 3px;
+            background-color: black;
+            margin: 4px 0;
+            border: 5px;
+        }
+
+        .menu-mobil{
+            display: none;
+            border:solid gold;
+            width: 380px;
+            position:absolute;
+            background-color: white;
+
+        }
+
+        .burger{
+            float: left;
+            margin-left: 2px;
+        }
+
+        .burger:hover .menu-mobil{
+            display:block;
+        
+        }
+
+        .menu-mobil ul{
+            list-style: none;
+        }
+
+        .menu-mobil a{
+            text-decoration: none;
+
+        }
+
+
+
+        /* ···················· FIN CABECERA ··············································· */
+
+
+        /* CONTENEDORES DE IMAGEN Y TEXTO PAGINA PRINCIPAL ############ */
+        .contenedor1{
+            display: grid;
+            width: ;
+            grid-template-columns: 38% 61%;
+            gap: 10px;    
+            border: 0 black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            align-content: center;
+            z-index: -1;
+        }
+        
+        /* .contenedor1-texto{ */
+            .contenedor1x{    
+                border:0 black;
+                padding: 30px;
+                background-color: whitesmoke;
+                /*  padding-bottom: 50px; */
+
+
+        }
+
+        .contenedor1-imagen{
+            border:0 black;
+        }
+
+        /* ···················· FIN TEXTO E IMAGEN ··············································· */
+
+        /* CONTENEDORES DE NOTICIAS ################################### */
+        .contenedor2{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            border: solid black;
+            margin-bottom: 20px;
+        }
+
+        .contenedor2x{
+        /*  .contenedor2-noticia1{ */
+            border:solid black;
+            padding-bottom: 150px;
+        }
+
+        .contenedor2-noticias2{
+            border: solid black;
+    
+        }
+
+
+        /* ···················· FIN NOTICIAS ··············································· */
+
+        /* FOOTER ##################################################### */
+        .footer{
+            border: solid blue;
+        }
+
+        .footer-columnas{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            border: solid red;
+        }
+
+        .footer-columna{
+            padding-bottom: 70px;
+            border: solid orange;
+        }
+
+        .footer-columna2{
+            border: solid orange;
+        }
+
+
+
+
+
+        /* ···················· FIN FOOTER ··············································· */
+        .img_cont1{
+            width: 100%;
+            height: auto;
+        }
+        
+        /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+        @media only screen and (max-width: 768px){
+            .imagen-cabecera{
+                text-align: center;
+            }
+            
+            .cabecera-pagina{
+                display: none;
+            }
+
+            .cabecera-mobil{
+                display: block;
+            }
+
+            .contenedor1{
+                grid-template-columns: auto;
+            }
+
+            .contenedor1 .contenedor1x:nth-of-type(1){
+                order: 2;
+            }
+
+            .contenedor2{
+                grid-template-columns: auto;
+            }
+
+            .footer-columnas{
+                grid-template-columns: auto;
+            }
+
+
+   
+        }
+    </style>-->
+
+</head>
+<body>
+    <!--div del contenedor principal-->
+    <div class="contenedor-pagina">
+        
+
+        <!--div cabecera de pagina ******************************************************************* -->
+        
+        <!--CABECERA PARA MAS DE 768px-->
+        <div class="cabecera-pagina">
+            <!--div imagen cabecera ****************************************************************** -->
+            <div class="imagen-cabecera"><a href="index.html"><img src="img/bridgewater-logo.svg" alt=""></a></div>
+
+            <!--div menu cabecera ******************************************************************** -->
+            <div class="menu-cabecera">
+                <ul>
+                    <li class=""><a href="noticia1.html"> Investigacion y conocimientos</a></li>
+                    <li class=""><a href="noticia1.html">Principios y cultura</a></li>
+                    <li class=""><a href="noticia1.html">Gente</a></li>
+                    <li class=""><a href="noticia1.html">Trabajar en Bridgewater</a></li>
+                    <li class=""><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>            
+        </div>
+
+        <!--CABECERA PARA MENOS DE 768px-->
+        <div class="cabecera-mobil">
+            <div class="burger">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="menu-mobil">
+                    <ul>
+                        <li class=""><a href="noticia1.html"> Investigacion y conocimientos</a></li>
+                        <li class=""><a href="noticia1.html">Principios y cultura</a></li>
+                        <li class=""><a href="noticia1.html">Gente</a></li>
+                        <li class=""><a href="noticia1.html">Trabajar en Bridgewater</a></li>
+                        <li class=""><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="imagen-cabecera"><a href=""><img src="img/bridgewater-logo.svg" alt=""></a></div>
+        </div>
+
+        
+        <!--div imagen y texto de pagina principal-->
+        <aside>
+            <div class="contenedor1">
+                <div class="contenedor1x">
+                    <p><h4>Investigacion y conocimientos</h4></p>
+                    <p><h2>Desafios acutales que enfrentan los inversores</h2></p>
+                    <p>Nuestra perspectiva antes de la guerra entre Rusia y Ucrania era de un fuerte crecimiento nominal impulsado por el aumento de la inflación y una necesidad cada vez mayor de un mayor endurecimiento de las políticas. Al agregar un shock de oferta además de un shock de demanda existente alimentado por MP3, el conflicto ha reforzado esta dinámica. Explore nuestra investigación sobre los desafíos actuales que presenta este nuevo entorno para los inversores.</p>
+                </div>
+                <div class="contenedor1x">
+                    <img src="img/img_world.jpeg" alt="" class="img_cont1">
+
+
+
+
+                </div>
+            
+            
+            
+            </div>
+        </aside>
+
+        <aside>
+            <div class="que-hacemos">
+                <h1>Que Hacemos</h1>
+                <p>Bridgewater Associates es una firma de gestión de activos de primer nivel, enfocada en brindar una visión y una asociación únicas para los inversores institucionales globales más sofisticados.</p>
+            
+            </div>
+        </aside>
+
+        <!--div contenedor de noticias-->
+        <aside>
+            <div class="asideNoticias">
+                <div class="contenedor2">
+                    <div class="contenedor2x">
+                        <div class="contenedor2xx">
+                            <p class="noticiasCategoria">Investigacion y Conocimientos</p>
+                            <p class="noticiasTitulo"><a href="noticia1.html">Actualización de nuestros CIO: Lo que venía ahora está sobre nosotros</a></p>
+                            <p class="noticiasFecha">19 de abril 2022</p>
+                            <p class="noticiasIntroduccion">MP3 (política monetaria y fiscal coordinada) produjo inyecciones masivas de dinero y crédito en las economías, lo que condujo a un alto crecimiento nominal, lo que llevó a una inflación autoreforzada, lo que llevó a un endurecimiento de la política monetaria que ahora apenas comienza. La estanflación es el gran riesgo y la guerra en Ucrania se ha sumado a eso. Los co-CIO Ray Dalio, Bob Prince y Greg Jensen comparten su perspectiva y perspectivas sobre las economías y los mercados actuales.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor2x">
+                        <div class="contenedor2xx">
+                            <p class="noticiasCategoria">Personas</p>
+                            <p class="noticiasTitulo">Mirando adentro para liderar hacia afuera</p>
+                            <p class="noticiasFecha">27 de abril 2022</p>
+                            <p class="noticiasIntroduccion">En una entrevista con Jessica Pliska para Forbes, el codirector ejecutivo Nir Bar Dea habla sobre crecer en Israel, el potencial de crecimiento a través del fracaso y la reflexión, y el poder de la transparencia radical de Bridgewater.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor2x">
+                        <div class="contenedor2xx">
+                            <p class="noticiasCategoria">Investigacion y Conocimientos</p>
+                            <p class="noticiasTitulo">El ciclo de renta variable arquetípico y la anatomía de un mercado bajista</p>
+                            <p class="noticiasFecha">05 de abril 2022</p>
+                            <p class="noticiasIntroduccion">A medida que la Reserva Federal haga la transición hacia el endurecimiento, será cada vez más importante que los inversores comprendan los impulsores de un mercado bajista en acciones y los enfoques para gestionarlo.</p>
+                        </div>
+                    </div>
+                    <div class="contenedor2x">
+                        <div class="contenedor2xx">
+                            <p class="noticiasCategoria">Investigacion y Conocimientos</p>
+                            <p class="noticiasTitulo">¿Está saliendo aire de las burbujas? ¿Y eso es saludable o siniestro?</p>
+                            <p class="noticiasFecha">28 de marzo 2022</p>
+                            <p class="noticiasIntroduccion">A medida que la Reserva Federal se ha desplazado hacia la reducción gradual y ha comenzado a descontarse una ralentización de la avalancha de liquidez, estamos viendo cómo surgen grietas en los segmentos más burbujeantes del mercado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!--div footer-->
+        <div class="footer">
+            <div class="footer-contenedor">
+                <div class="footer-imagen">
+                    <a href="index.html"><img class="imgFooter1" src="img/logo_footer.png" alt=""></a>
+                </div>
+                <!--<div class=""><img class="imgFooter1" src="img/img_office.jpeg" alt=""></div>-->
+                <div class="footer-columnas">
+                    <div class="footer-columna">
+                        <img src="img/img_office.jpeg" alt="">
+                        <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+ 
+
+
+                    </div>
+                    
+                    <div class="footer-columna">
+                        <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+                        <ul>
+                            <li class=""><a href=""> Investigacion y conocimientos</a></li>
+                            <li class=""><a href="">Principios y cultura</a></li>
+                            <li class=""><a href="">Gente</a></li>
+                            <li class=""><a href="">Trabajar en Bridgewater</a></li>
+                            <li class=""><a href="">Contacto</a></li>
+                        </ul>
+
+
+                    </div>
+                    <!--<p>Glindinning Pi, Westport 6880 - CP1425</p>-->
+                    <i class="fa-brands fa-whatsapp" style="font-size: 20px;"> +1 (203) 226 3030</i>
+                    <a href="https://twitter.com/Bridgewater"><i class="fa-brands fa-twitter" style="font-size: 20px;"> @bridgewater</i></a>
+                    <a href="https://www.instagram.com/bridgewaterassociates/?hl=es"><i class="fa-brands fa-instagram" style="font-size: 20px;"> @bridgewaterassociates</i></a>
+                    <a href="https://www.linkedin.com/company/bridgewater-associates/"><i class="fa-brands fa-linkedin" style="font-size: 20px;"> bridgewater-associates</i></a>
+                    <a href="https://www.youtube.com/channel/UC-hKNOj4P-Y8hR9QEHpZPig"></a>
+                </div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>
